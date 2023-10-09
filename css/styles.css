@@ -16,56 +16,83 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+body{
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(199,246,255,1) 100%);
+  position: relative;
+}
+
 .hidden{
   display: none;
 }
 
+.minimizar{
+  transform: scale(0);
+}
+
 .loader{
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(199,246,255,1) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: .5s;
   position: relative;
   height: 100vh;
   margin: 0 auto;
   display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   overflow-y: hidden;
   padding:  10vh;
   color: var(--dark);
-  background: var(--blue-light);
 
-  #load-airplane{
-    width: 10vw;
-    position: absolute;
-    transform: rotate(90deg);
-    top: 20vh;
-    animation: loader 10s infinite linear;
-  }
-  >h2{
+
+  >.content{
+
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 6.5vw;
+    border-radius: 30px;
+    background: #c7f6ff63;
+    padding: 250px;
+
+    >#load-airplane{
+      width: 10vw;
+      margin-bottom: 4vh;
+      transform: rotate(90deg);
+      animation: loader 3s infinite linear;
+    }
+    >h2{
+      margin-left: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 5vw;
+      padding-right: 2px;
+      border-right: 3px solid #000;
+      animation:efecto .7s step-end infinite;
+    }
   }
 
-  >p{
-    text-align: left;
-    font-size: 1.8vw;
-    font-weight: 300;
-  }
+
 
 }
+
+
+@keyframes efecto {
+  50%{
+    border-color: transparent;
+  }
+}
+
 
 @keyframes loader {
-  0%{
-    transform: rotate(90deg);
-  }
-  33%{
-    transform: rotate(180deg);
-  }
-  66%{
-    transform: rotate(270deg);
-  }
-  100%{
-    transform: rotate(360deg);
-  }
- 
+ from{
+  transform: rotate(-360deg);
+ }
+ to{
+  transform: rotate(0deg);
+ }
 }
+
