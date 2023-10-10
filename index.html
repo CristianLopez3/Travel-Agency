@@ -5,51 +5,123 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Travel Agency</title>
+  <!--OUR STYLESHEET-->
   <link rel="stylesheet" href="./css/styles.css">
+  <!--BOOTSTRAP STYLE SHEET-->
   <link rel="stylesheet" href="./assets/bootstrap-lib/css/bootstrap.min.css">
+  <!--PAGE ICON-->
   <link rel="icon" type="image/x-icon" href="./img/icons/airplane.svg">
+  <!--SWIPPER JS - COROUSEL LIBRARY-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/swipper.css" />
+  <!--OTHERS-->
+
 </head>
 
-<body >
+<body>
 
 
 
-  <div class="container hidden" id="principal-content">
+  <div class="container hidden" id="principal-content"> 
+
     <header>
       <!--NAVBAR SECTION-->
       <nav class="container navbar navbar-expand-lg ">
+
         <div class="container-fluid">
+
           <a class="navbar-brand" href="#">
             <img src="./img/icons/airplane-square.svg" alt="logo">
           </a>
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <img src="./img/icons/fatrows.svg" alt="">
           </button>
+
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active px-4" aria-current="page" href="#">Home</a>
+                <a class="nav-link px-4" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link px-4" href="#">Visita</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link px-4" href="#">Agenda</a>
+                <a class="nav-link px-4" href="#">Conocenos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link  px-4"  href="#">Contactanos</a>
+                <a class="nav-link  px-4" href="#">Reserva</a>
               </li>
             </ul>
           </div>
+
         </div>
+
       </nav>
 
+      <!--HERO SECTION-->
+      <div class="container">
+        <div class="row hero d-flex align-items-center">
+
+          <div class="col-lg-4 col-sm-10 title-principal align-items-center">
+            <p>Bienvenidos, a tu </p>
+            <h1>Agencia de Viajes</h1>
+            <p>Planeamos y traemos los mejores <span>viajes </span> para cualquiere etapa de tu vida.</p>
+          </div>
+          <!--SWIPPER CAROUSEL-->
+          <div class="col-lg-8 col-sm-10">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="./img/sun-rise.jpg" alt="">
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="./img/bike.webp" alt="">
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="./img/beach.webp" alt="">
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img src="./img/kayak.webp" alt="">
+                  </div>
+                </div>
+       
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev">
+      
+              </div>
+              <div class="swiper-button-next"></div>
+
+              <!-- If we need scrollbar -->
+              <div class="swiper-scrollbar"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
     </header>
 
     <main>
-      <h1>por favor sirve</h1>
+
     </main>
 
     <footer></footer>
@@ -64,8 +136,11 @@
     </div>
   </div>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="./assets/bootstrap-lib/js/bootstrap.min.js"></script>
   <script src="./js/App.js"></script>
+  <script></script>
 </body>
 
 </html>
