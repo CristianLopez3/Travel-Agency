@@ -85,6 +85,12 @@ body {
 }
 
 
+.swiper .swiper-button-next:hover,
+.swiper .swiper-button-prev:hover{
+  cursor: url(../img/cursors/pointer.png), auto;
+}
+
+
 @keyframes efecto {
   50% {
     border-color: transparent;
@@ -110,18 +116,34 @@ nav {
   padding: 140px 40px;
 }
 
+.viaja-link{
+  padding: 8px 20px;
+  background: var(--blue-light);
+  margin-top: 30px !important;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  transition: .5s;
+}
+
+a.viaja-link:hover{
+  transform: scale(1.1);
+  cursor: url(../img/cursors/pointer.png), auto;
+
+}
+
+
 .swiper {
   max-width: 1220px;
   width: 100%;
-  height: 600px;
+  padding-bottom: 80px !important;
 }
 
 .card {
   width: 100%;
   margin: 0 auto;
   border-radius: 30px;
-
-
 }
 
 .swiper .swiper-button-next,
@@ -150,13 +172,16 @@ nav {
   background: #db6847 !important;
 }
 
-.swiper .swiper-button-next:hover,
-.swiper .swiper-button-prev:hover,
-a:hover{
-  cursor: url(../img/cursors/pointer.png), auto;
+/*=================== RESPONSIVE DESIGN =============================*/
+
+@media screen and (max-width:992px) {
+  .title-principal {
+    text-align: center !important;
+    margin-bottom: 50px;
+  }
 }
 
-/*=================== RESPONSIVE DESIGN =============================*/
+
 
 @media screen and (max-width:780px) {
 
@@ -167,6 +192,7 @@ a:hover{
 
   .title-principal {
     text-align: center !important;
+    margin-bottom: 50px;
   }
 
 }
@@ -183,7 +209,6 @@ a:hover{
   .swiper {
     max-width: 1220px;
     width: 100%;
-    height: 30vh;
   }
 
 
