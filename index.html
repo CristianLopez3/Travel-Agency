@@ -22,7 +22,7 @@
 
 
 
-  <div class="container hidden overflow-body" id="principal-content">
+  <div class="container  overflow-body hidden" id="principal-content">
 
     <!--HEADER SECTION-->
     <header>
@@ -65,7 +65,7 @@
       <div class="container mx-auto">
         <div class="row hero d-flex align-items-center">
 
-          <div class="col-lg-4 col-sm-10 title-principal align-items-center mx-auto">
+          <div class="col-lg-5 col-sm-10 title-principal align-items-center mx-auto">
             <h1 class="my-5">Agencia de Viajes</h1>
             <p>Planeamos y traemos los mejores <span>viajes </span> para cualquier etapa de tu vida.</p>
 
@@ -74,7 +74,7 @@
             </span>
           </div>
           <!--SWIPPER CAROUSEL-->
-          <div class="col-lg-8 col-sm-10 mx-auto">
+          <div class="col-lg-7 col-sm-10 mx-auto">
             <!-- Slider main container -->
             <div class="swiper">
               <!-- Additional required wrapper -->
@@ -198,9 +198,15 @@
       </section>
 
       <!--MAIN SECTION --- OFERTAS  -->
-      <section id="ofertas" class="container row text-center my-4">
+      <section id="ofertas" class="container row justify-content-center text-center my-4">
 
-        <div class="col-lg-3 col-md-2 ofertas">
+        <h2 class="mx-auto h1">Ofertas!</h2>
+        <p class="mx-auto">Visita lugares impresionantes a precios increibles, no te lo pierdas.</p>
+
+        <div class="col-lg-4 col-md-6 py-4 ofertas">
+
+
+
           <div class="card" style="width: 18rem;">
             <div class="imagen">
               <img src="./img/offert/ala.jpg" class="card-img-top" alt="...">
@@ -209,26 +215,186 @@
             <div class="card-body">
               <p class="card-text">
                 Viaja por el mundo y conoce las maravillas que este nos brinda.
+                <br>
+                <span> <b class="badge bg-secondary">25%</b> de descuento</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 py-4 ofertas">
+          <div class="card" style="width: 18rem;">
+            <div class="imagen">
+              <img src="./img/offert/japan.jpg" class="card-img-top" alt="...">
+              <a href="#">Compra</a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Conoce Japon y todo lo que los samurais nos dan.
+                <br>
+                <span> <b class="badge bg-secondary">38%</b> de descuento</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 py-4 ofertas">
+          <div class="card" style="width: 18rem;">
+            <div class="imagen">
+              <img src="./img/offert/london.jpg" class="card-img-top" alt="...">
+              <a href="#">Compra</a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                ¿Te emociona conocer el país que más imperios conquistó?
+                <br>
+                <span> <b class="badge bg-secondary">15%</b> de descuento</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 py-4 ofertas">
+          <div class="card" style="width: 18rem;">
+            <div class="imagen">
+              <img src="./img/offert/hawai.jpg" class="card-img-top" alt="...">
+              <a href="#">Compra</a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Las playas de Hawai te estan esperando, visitalas ya.
+                <br>
+                <span> <b class="badge bg-secondary">40%</b> de descuento</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 py-4 ofertas">
+          <div class="card" style="width: 18rem;">
+            <div class="imagen">
+              <img src="./img/offert/brasil.jpg" class="card-img-top" alt="...">
+              <a href="#">Compra</a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Visita la fauna de Brasil y conoce todo lo que esta nos ofrece.
+                <br>
+                <span> <b class="badge bg-secondary">30%</b> de descuento</span>
               </p>
             </div>
           </div>
         </div>
 
 
+        <div class="col-lg-4 col-md-6 py-4 ofertas">
+          <div class="card" style="width: 18rem;">
+            <div class="imagen">
+              <img src="./img/offert/nature.jpg" class="card-img-top" alt="...">
+              <a href="#">Compra</a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                China tiene lugares escondidos que resultan impresionantes.
+                <br>
+                <span> <b class="badge bg-secondary">33%</b> de descuento</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
       </section>
+
+
+
+      <section id="contacto" class="my-5">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-12 text-left px-5 py-2 text-center">
+              <h2>Reserva Ya!</h2>
+              <p>
+                Si te intereso algun destino no dudes en realizar tu reserva ya
+              </p>
+            </div>
+
+            <div class="col-lg-6 p-4 mt-4 ">
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Nombres</span>
+                <input type="text" class="form-control" placeholder="Cristian..." aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Correo:</span>
+                <input type="email" class="form-control" placeholder="example@mail..." aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Celular:</span>
+                <input type="number" class="form-control" placeholder="+57 313 ..." aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">Destino:</span>
+                <input type="email" class="form-control" placeholder="Japon..." aria-label="Username"
+                  aria-describedby="basic-addon1">
+              </div>
+
+
+
+              <div class="input-group">
+                <span class="input-group-text"></span>
+                <textarea class="form-control" aria-label="With textarea"></textarea>
+              </div>
+
+
+              <div class="input-group mb-3 mt-4">
+                <input type="submit" class="form-control text-white submit-btn" placeholder="submit" value="RESERVAR"
+                  aria-label="button" aria-describedby="basic-addon1">
+              </div>
+
+
+
+
+            </div>
+
+            <div class="col-lg-6 mt-4 d-flex justify-content-center p-4">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31815.282855686673!2d-74.07492735915527!3d4.610065423971739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99dd435955e5%3A0x959777de95425197!2sAbogado%20Urbanista%20-Solarte%20Abogados%20-%20Abogado%20Inmobiliario!5e0!3m2!1ses!2sco!4v1696611021227!5m2!1ses!2sco"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <br>
+
 
 
     </main>
 
-    <footer></footer>
+
+
+    <footer>
+      <p class="d-flex justify-content-center p-5 ">&copy; COPYRIGHT Cristian Camilo Lopez Martinez - License MIT </p>
+    </footer>
+
+
   </div>
 
 
   <!--LOADER-->
-  <div class="loader hidden">
-    <div class="content">
+  <div class="loader d-flex justify-content-center align-items-center">
+    <div class="content d-flex justify-content-center align-items-center">
+
       <img id="load-airplane" src="./img/icons/loader.svg" alt="airplane">
-      <h2>Bienvenido a tu <br> agencia de viajes.</h2>
+      <h2>Bienvenido ✈️</h2>
     </div>
   </div>
 
@@ -237,6 +403,7 @@
   <script src="./assets/bootstrap-lib/js/bootstrap.min.js"></script>
   <script src="./js/App.js"></script>
   <script></script>
+
 </body>
 
 </html>

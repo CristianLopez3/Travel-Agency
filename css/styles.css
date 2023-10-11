@@ -32,6 +32,13 @@ body {
 /*================================================================================*/
 /* HEADER */
 /*================================================================================*/
+
+
+h1, 
+h2{
+  text-transform: uppercase;
+}
+
 .hidden {
   display: none;
 }
@@ -41,20 +48,18 @@ body {
 }
 
 .loader {
-  background: rgb(238, 174, 202);
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(199, 246, 255, 1) 100%);
   position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  transform: scale(1);
   top: 0;
   left: 0;
-  transition: .5s;
-  position: relative;
-  height: 100vh;
+  transition: .8s;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow-y: hidden;
-  padding: 10vh;
+  overflow: hidden;
+  padding: 100px;
   color: var(--dark);
 
 
@@ -65,10 +70,11 @@ body {
     align-items: center;
     border-radius: 30px;
     background: #c7f6ff63;
-    padding: 250px;
+    padding: 150px;
+    box-shadow: 0 0 20px #0000006e;
 
-    >#load-airplane {
-      width: 10vw;
+    > #load-airplane {
+      width: 20rem;
       margin-bottom: 4vh;
       transform: rotate(90deg);
       animation: loader 3s infinite linear;
@@ -79,8 +85,9 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 5vw;
+      font-size: 4rem;
       padding-right: 2px;
+      padding-bottom: 30px;
       border-right: 3px solid #000;
       animation: efecto .7s step-end infinite;
     }
@@ -118,8 +125,16 @@ nav {
   padding: 30px 10px !important;
 }
 
+h1{
+  font-size: 5rem !important;
+}
+
 .hero {
   padding: 80px 40px 200px 40px;
+}
+
+.title-principal{
+  padding: 10px 80px 0 10px !important;
 }
 
 .title-principal p {
@@ -201,7 +216,7 @@ nav {
 }
 
 #destinos h2 {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 #destinos p {
@@ -223,6 +238,10 @@ nav {
   padding: 100px 40px;
 }
 
+#ofertas h2{
+  font-size: 4rem;
+}
+
 #ofertas .ofertas {
   position: relative;
   z-index: 1;
@@ -242,18 +261,52 @@ nav {
   text-decoration: none;
   padding: 8px 20px;
   border-radius: 7px;
-  color: var(--dark);
+  color: #fff;
   font-weight: 700;
   letter-spacing: 2px;
   transform: scale(0);
   transition: .5s;
 }
 
+
 #ofertas .card:hover a{
-  background: #db674793;
+  background: #00000063;
+  box-shadow: 0 0 5px #fff;
   transform: scale(1);
 }
 
+#ofertas .card a:hover{
+  cursor: url(../img/cursors/pointer.png), auto;
+}
+
+
+
+/* CONTACTO */
+#contacto h2{
+  font-size: 4rem;
+}
+
+#contacto input{
+  padding: 10px;
+}
+
+#contacto input:focus,
+#contacto textarea:focus{
+  box-shadow: 0 0 10px #db6847;
+}
+
+#contacto .submit-btn{
+  background: var(--red);
+  font-size: 1.3rem;
+  border-radius: 10px;
+  transition: .5s;
+}
+#contacto .submit-btn:hover{
+  transform: scale(.94);
+  box-shadow: 0 0 10px #db6847;
+  cursor: url(../img/cursors/pointer.png), auto;
+
+}
 
 
 

@@ -31,27 +31,23 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 
   // LOADER CONFIGURATIONS
+  
   window.addEventListener('load', function(){
     const $loader = document.querySelector('.loader');
+    const $minimizar = document.querySelector('.minimizar');
     const $principal = document.getElementById('principal-content');
   
     setTimeout(function() {
       console.log('carga completa');
       $loader.classList.add('minimizar');
+      $loader.style.transform = "scale(0)";
       $principal.classList.remove('hidden');
-    }, 0); // 5000 milisegundos (5 segundos) CAMBIARLA
+    }, 1000); // 5000 milisegundos (5 segundos) CAMBIARLA
+
   });
 
   // ANOTHER CONFIGURATION
 
-
-  const viajarLink = document.getElementById('viaja');
-  viajarLink.addEventListener('mouseover', (e) => {
-      viajarLink.classList.add('hover');
-  });  
-  viajarLink.addEventListener('mouseleave', (e) => {
-    viajarLink.classList.remove('hover');
-  })
 
   
   
