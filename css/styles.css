@@ -85,14 +85,14 @@ h2{
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 4rem;
+      font-size: 2rem;
+      margin-bottom: 40px;
       padding-right: 2px;
       padding-bottom: 30px;
       border-right: 3px solid #000;
       animation: efecto .7s step-end infinite;
     }
   }
-
 
 
 }
@@ -126,7 +126,7 @@ nav {
 }
 
 h1{
-  font-size: 5rem !important;
+  font-size: 5rem;
 }
 
 .hero {
@@ -134,7 +134,7 @@ h1{
 }
 
 .title-principal{
-  padding: 10px 80px 0 10px !important;
+  padding: 10px;
 }
 
 .title-principal p {
@@ -216,7 +216,8 @@ h1{
 }
 
 #destinos h2 {
-  font-size: 4rem;
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
 
 #destinos p {
@@ -239,7 +240,8 @@ h1{
 }
 
 #ofertas h2{
-  font-size: 4rem;
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
 
 #ofertas .ofertas {
@@ -283,7 +285,8 @@ h1{
 
 /* CONTACTO */
 #contacto h2{
-  font-size: 4rem;
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
 
 #contacto input{
@@ -314,6 +317,7 @@ h1{
 
 @media screen and (max-width:992px) {
   .title-principal {
+    padding: 10px;
     text-align: center !important;
     margin-bottom: 50px;
   }
@@ -323,12 +327,27 @@ h1{
 
 @media screen and (max-width:780px) {
 
+ 
+  
+.loader {
+  padding: 50px;
+
+  >.content {
+    padding: 70px;
+    box-shadow: 0 0 20px #0000006e;
+
+  }
+
+
+}
+
   .swiper .swiper-button-next,
   .swiper .swiper-button-prev {
     display: none;
   }
 
   .title-principal {
+    padding: 5px;
     text-align: center !important;
     margin-bottom: 50px;
   }
@@ -339,6 +358,24 @@ h1{
 
 
 @media screen and (max-width:580px) {
+
+  .loader {
+    padding: 20px;
+  
+    >.content {
+      flex-direction: column;
+      padding: 35px;
+      box-shadow: 0 0 20px #0000006e;
+
+      > #load-airplane {
+        width: 15rem
+      }
+
+    }
+  
+  
+  }
+  
 
   body {
     overflow-x: hidden;

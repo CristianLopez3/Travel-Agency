@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
       $loader.classList.add('minimizar');
       $loader.style.transform = "scale(0)";
       $principal.classList.remove('hidden');
-    }, 1000); // 5000 milisegundos (5 segundos) CAMBIARLA
+    }, 10000); // 5000 milisegundos (5 segundos) CAMBIARLA
 
   });
 
