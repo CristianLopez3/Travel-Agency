@@ -31,16 +31,39 @@
 
         <div class="container-fluid">
 
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand ml-4" href="#">
             <img src="./img/icons/airplane-square.svg" alt="logo">
           </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+  
+
+
+          <button class="navbar-toggler d-lg-none d-md-block d-sm-block btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDropNav"
+            aria-controls="offcanvasDropNav">
             <img src="./img/icons/fatrows.svg" alt="">
           </button>
 
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div class="offcanvas offcanvas-start  d-lg-none canvas-body" tabindex="-1" id="offcanvasDropNav"
+            aria-labelledby="offcanvasDropNavLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title " id="offcanvasDropNavLabel">Tu Agencia</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+          
+                <ul class="d-flex justify-content-start align-items-start flex-column">
+                  <li><a class="dropdown-item" href="#">Visita</a></li>
+                  <li><a class="dropdown-item" href="#">Conocenos</a></li>
+                  <li><a class="dropdown-item" href="#">Reserva</a></li>
+                </ul>
+   
+            </div>
+          </div>
+
+
+
+
+          <div class="collapse navbar-collapse justify-content-end justify-content-md-end d-md-none" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link px-4" aria-current="page" href="#">Home</a>
@@ -328,7 +351,7 @@
 
               <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">Correo:</span>
-                <input type="email" class="form-control" placeholder="example@mail..." aria-label="Username"
+                <input type="email" class="form-control" placeholder="DropNav@mail..." aria-label="Username"
                   aria-describedby="basic-addon1">
               </div>
 
@@ -382,7 +405,8 @@
 
 
     <footer>
-      <p class="d-flex text-center justify-content-center p-5 ">&copy; COPYRIGHT Cristian Camilo Lopez Martinez - License MIT </p>
+      <p class="d-flex text-center justify-content-center p-5 ">&copy; COPYRIGHT Cristian Camilo Lopez Martinez -
+        License MIT </p>
     </footer>
 
 

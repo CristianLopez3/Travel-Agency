@@ -109,6 +109,35 @@ h2{
 }
 
 
+.canvas-body{
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 49%, rgba(199, 246, 255, 1) 100%) !important;
+
+
+  /* ESTILOS PARA EL HEADER DEL CANVAS DESPLEGABLE */
+  >.offcanvas-header{
+
+    >h5{
+      padding: 20px 30px;
+    }
+  }
+
+  /* ESTILOS PARA EL CUERPO DEL CANVAS DESPLEGABLE */
+  >.offcanvas-body{
+  
+    >ul {
+      list-style: none;
+  
+      >li{
+        padding: 20px 20px 20px 0;
+        border-bottom: 1px solid #000;
+      }
+
+    }
+    
+  }
+  
+}
+
 .swiper .swiper-button-next:hover,
 .swiper .swiper-button-prev:hover {
   cursor: url(../img/cursors/pointer.png), auto;
