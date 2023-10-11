@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;  
+  font-family: 'Ubuntu', sans-serif;
 }
 
 
@@ -25,7 +25,13 @@ body {
   cursor: url(../img/cursors/close.png), auto;
 }
 
+.overflow-body{
+  overflow-y: hidden;
+}
 
+/*================================================================================*/
+/* HEADER */
+/*================================================================================*/
 .hidden {
   display: none;
 }
@@ -86,7 +92,7 @@ body {
 
 
 .swiper .swiper-button-next:hover,
-.swiper .swiper-button-prev:hover{
+.swiper .swiper-button-prev:hover {
   cursor: url(../img/cursors/pointer.png), auto;
 }
 
@@ -113,24 +119,34 @@ nav {
 }
 
 .hero {
-  padding: 140px 40px;
+  padding: 80px 40px 200px 40px;
 }
 
-.viaja-link{
-  padding: 8px 20px;
+.title-principal p {
+  margin-bottom: 40px;
+}
+
+.viaja-link {
+  padding: 8px 40px;
   background: var(--blue-light);
-  margin-top: 30px !important;
-  border-radius: 10px;
-  text-decoration: none;
+  border-radius: 7px;
   color: var(--dark);
-  font-weight: 500;
   transition: .5s;
+  margin: 10px 0 !important;
+
+  >a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--dark);
+  }
 }
 
-a.viaja-link:hover{
-  transform: scale(1.1);
-  cursor: url(../img/cursors/pointer.png), auto;
 
+.viaja-link:hover {
+  box-shadow: 0px 0px 10px #db6847;
+  padding: 12px 48px;
+  cursor: url(../img/cursors/pointer.png), auto;
+  background: #88d9e9;
 }
 
 
@@ -156,7 +172,7 @@ a.viaja-link:hover{
 }
 
 .swiper .swiper-button-next:hover,
-.swiper .swiper-button-prev:hover{
+.swiper .swiper-button-prev:hover {
   background: #c7f6ff;
 }
 
@@ -171,6 +187,75 @@ a.viaja-link:hover{
 .swiper-pagination-bullet-active {
   background: #db6847 !important;
 }
+
+
+/*================================================================================*/
+/* MAIN */
+/*================================================================================*/
+
+
+/* DESTINOS */
+#destinos {
+  margin-top: 40px;
+  padding: 40px;
+}
+
+#destinos h2 {
+  font-size: 5rem;
+}
+
+#destinos p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.caption-carrusel {
+  padding: 10px;
+  border-radius: 8px;
+  background: #00000070;
+}
+
+
+/* DESTINOS */
+
+#ofertas {
+  padding: 100px 40px;
+}
+
+#ofertas .ofertas {
+  position: relative;
+  z-index: 1;
+
+}
+
+#ofertas .imagen{
+  position: relative;
+  z-index: 3;
+}
+
+#ofertas .imagen a{
+  position: absolute;
+  z-index: 10;
+  top: 43%;
+  left: 31%;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 7px;
+  color: var(--dark);
+  font-weight: 700;
+  letter-spacing: 2px;
+  transform: scale(0);
+  transition: .5s;
+}
+
+#ofertas .card:hover a{
+  background: #db674793;
+  transform: scale(1);
+}
+
+
+
 
 /*=================== RESPONSIVE DESIGN =============================*/
 
@@ -203,8 +288,13 @@ a.viaja-link:hover{
 @media screen and (max-width:580px) {
 
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
+
+  .hero {
+    padding: 80px 40px 100px 40px;
+  }
+
 
   .swiper {
     max-width: 1220px;

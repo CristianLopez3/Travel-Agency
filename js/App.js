@@ -44,6 +44,19 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   // ANOTHER CONFIGURATION
 
+
+  const viajarLink = document.getElementById('viaja');
+  viajarLink.addEventListener('mouseover', (e) => {
+      viajarLink.classList.add('hover');
+  });  
+  viajarLink.addEventListener('mouseleave', (e) => {
+    viajarLink.classList.remove('hover');
+  })
+
+  
+  
+  
+
 })
 
 

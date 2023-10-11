@@ -22,11 +22,12 @@
 
 
 
-  <div class="container hidden" id="principal-content"> 
+  <div class="container hidden overflow-body" id="principal-content">
 
+    <!--HEADER SECTION-->
     <header>
       <!--NAVBAR SECTION-->
-      <nav class="container navbar navbar-expand-lg ">
+      <nav class="container navbar navbar-expand-lg mx-auto">
 
         <div class="container-fluid">
 
@@ -61,18 +62,19 @@
       </nav>
 
       <!--HERO SECTION-->
-      <div class="container">
+      <div class="container mx-auto">
         <div class="row hero d-flex align-items-center">
 
-          <div class="col-lg-4 col-sm-10 title-principal align-items-center">
-            <p>Bienvenidos, a tu </p>
-            <h1>Agencia de Viajes</h1>
-            <p>Planeamos y traemos los mejores <span>viajes </span> para cualquiere etapa de tu vida.</p>
+          <div class="col-lg-4 col-sm-10 title-principal align-items-center mx-auto">
+            <h1 class="my-5">Agencia de Viajes</h1>
+            <p>Planeamos y traemos los mejores <span>viajes </span> para cualquier etapa de tu vida.</p>
 
-            <a class="viaja-link" href="#" >Viaja ya!</a>
+            <span class="viaja-link" id="viaja">
+              <a href="#">Viaja ya!</a>
+            </span>
           </div>
           <!--SWIPPER CAROUSEL-->
-          <div class="col-lg-8 col-sm-10">
+          <div class="col-lg-8 col-sm-10 mx-auto">
             <!-- Slider main container -->
             <div class="swiper">
               <!-- Additional required wrapper -->
@@ -101,14 +103,14 @@
                     <img src="./img/kayak.webp" alt="">
                   </div>
                 </div>
-       
+
               </div>
               <!-- If we need pagination -->
               <div class="swiper-pagination"></div>
 
               <!-- If we need navigation buttons -->
               <div class="swiper-button-prev">
-      
+
               </div>
               <div class="swiper-button-next"></div>
 
@@ -118,11 +120,103 @@
           </div>
 
         </div>
-      </div>
+
 
     </header>
 
+
+    <!--MAIN SECTION-->
     <main>
+
+      <!--MAIN SECTION --- DESTINOS  -->
+      <section id="destinos" class="container row text-center my-4 d-flex flex-lg-row-reverse flex-md-row-reverse">
+
+
+        <article
+          class="col-lg-6 col-md-10 col-sm-10  mx-auto d-flex justify-content-center align-items-center flex-column">
+          <h2>Destinos Populares</h2>
+          <p>Explora nuestros destinos más buscados y experimenta aventuras inolvidables en lugares increíbles de todo
+            el
+            mundo. Desde playas paradisíacas hasta emocionantes ciudades, tenemos la escapada perfecta para ti. Descubre
+            lo que hace que estos destinos sean tan especiales y planifica tu próximo viaje con nosotros.</p>
+        </article>
+
+        <article class="col-lg-6 col-md-10 col-sm-10 mx-auto mx-auto px-5">
+
+          <div id="carouselDestinosCaptions" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselDestinosCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselDestinosCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselDestinosCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/map.jpg" class="d-block w-100" alt="mapa de viaje">
+                <div class="carousel-caption d-none d-md-block caption-carrusel">
+                  <h5>Visita Colmbia</h5>
+                  <p>¿Sabías que? Colombia una gran diversidad etnica y cultural.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="./img/dubai.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block caption-carrusel">
+                  <h5>Visita Dubai</h5>
+                  <p>¿Sabías que? Dubai tiene una de las infraestructuras mas maravillosas del mundo.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="./img/canada.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block caption-carrusel">
+                  <h5>Visita Canada</h5>
+                  <p>¿Sabías que? Canada goza de un gran terrirorio silvestre y artico.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDestinosCaptions"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselDestinosCaptions"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+
+          </div>
+        </article>
+
+      </section>
+
+      <!--MAIN SECTION --- OFERTAS  -->
+      <section id="ofertas" class="container row text-center my-4">
+
+        <div class="col-lg-3 col-md-2 ofertas">
+          <div class="card" style="width: 18rem;">
+            <div class="imagen">
+              <img src="./img/offert/ala.jpg" class="card-img-top" alt="...">
+              <a href="#">Compra</a>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Viaja por el mundo y conoce las maravillas que este nos brinda.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+
 
     </main>
 
