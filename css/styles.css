@@ -44,8 +44,19 @@ h2{
 }
 
 .minimizar {
+  animation: rotate 0.5s ease-in 1; 
   transform: scale(0);
 }
+
+@keyframes rotate {
+  to {
+    transform: rotate(180deg) scale(0); 
+  }
+  from {
+    transform: rotate(360deg) scale(1); 
+  }
+}
+
 
 .loader {
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(199, 246, 255, 1) 100%);
@@ -56,7 +67,7 @@ h2{
   transform: scale(1);
   top: 0;
   left: 0;
-  transition: .8s;
+  transition:ease .8s;
   margin: 0 auto;
   overflow: hidden;
   padding: 100px;

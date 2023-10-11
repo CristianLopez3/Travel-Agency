@@ -34,15 +34,15 @@ document.addEventListener("DOMContentLoaded", (e) => {
   
   window.addEventListener('load', function(){
     const $loader = document.querySelector('.loader');
-    const $minimizar = document.querySelector('.minimizar');
     const $principal = document.getElementById('principal-content');
   
     setTimeout(function() {
       console.log('carga completa');
       $loader.classList.add('minimizar');
       $loader.style.transform = "scale(0)";
+    
       $principal.classList.remove('hidden');
-    }, 10000); // 5000 milisegundos (5 segundos) CAMBIARLA
+    }, 1000); // 5000 milisegundos (5 segundos) CAMBIARLA
 
   });
 
