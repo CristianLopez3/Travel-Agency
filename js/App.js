@@ -9,11 +9,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
     pagination: {
       el: '.swiper-pagination',
     },
-/*    autoplay: {
+   autoplay: {
       delay: 1000,
       pauseOnMouseEnter: true,
       disableInteraction: false,
-    },*/
+    },
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
       $loader.style.transform = "scale(0)";
     
       $principal.classList.remove('hidden');
-    }, 0); // 5000 milisegundos (5 segundos) CAMBIARLA
+    }, 1000); // 5000 milisegundos (5 segundos) CAMBIARLA
 
   });
 

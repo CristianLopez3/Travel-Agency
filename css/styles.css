@@ -88,8 +88,8 @@ h2 {
   transform: scale(1);
   top: 0;
   left: 0;
-  transition: ease .1s;
   /*corregir*/
+  transition: .2s;
   margin: 0 auto;
   overflow: hidden;
   padding: 100px;
@@ -105,6 +105,7 @@ h2 {
     background: #c7f6ff63;
     padding: 150px;
     box-shadow: 0 0 20px #0000006e;
+    transition: .8s;
 
     >#load-airplane {
       width: 20rem;
@@ -160,17 +161,13 @@ h2 {
 
 }
 
-.swiper .swiper-button-next:hover,
-.swiper .swiper-button-prev:hover {
-  cursor: url(../img/cursors/pointer.png), auto;
-}
-
 
 @keyframes efecto {
   50% {
     border-color: transparent;
   }
 }
+
 
 
 @keyframes loader {
@@ -478,7 +475,7 @@ h1 {
 
 
 #actividades .container-activity .content-activity a{
-
+  cursor: url(../img/cursors/pointer.png), auto;
   text-decoration: none;
   padding: 8px 20px;
   border-radius: 10px;
@@ -491,6 +488,13 @@ h1 {
 /*=========================================================================================*/
 /*=========================================================================================*/
 
+
+.swiper .swiper-button-next:hover,
+.swiper .swiper-button-prev:hover,
+a:hover, 
+button:hover {
+  cursor: url(../img/cursors/pointer.png), auto;
+}
 
 
 
