@@ -328,7 +328,7 @@ h1 {
   left: 31%;
   text-decoration: none;
   padding: 8px 20px;
-  border-radius: 7px;
+  border-radius: px;
   color: #fff;
   font-weight: 700;
   letter-spacing: 2px;
@@ -566,6 +566,10 @@ h1 {
 
   .hero {
     padding: 80px 40px 100px 40px;
+  }
+
+  h1{
+    font-size: 3rem;
   }
 
 
