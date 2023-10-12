@@ -39,6 +39,21 @@ h2{
   text-transform: uppercase;
 }
 
+.imagen{
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.imagen img{
+  border-radius: 10px;
+}
+
+.img-width{
+  width: 100%;
+  height: 174px;
+  
+}
+
 .hidden {
   display: none;
 }
@@ -385,6 +400,17 @@ h1{
 
 
 
+/* PREGUNTAS */
+#momentos,
+#actividades{
+  padding-top: 40px;
+}
+
+
+/* ACTIVIDADES */
+
+
+
 
 
 
@@ -472,6 +498,11 @@ h1{
     display: none;
   }
 
+
+  #momentos,
+  #preguntas{
+    text-align: center !important;
+  }
 
 
 }
