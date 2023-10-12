@@ -19,13 +19,18 @@
 
 
 body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: rgb(238, 174, 202);
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(199, 246, 255, 1) 100%);
   position: relative;
   cursor: url(../img/cursors/close.png), auto;
 }
 
-.overflow-body{
+.overflow-body {
   overflow-y: hidden;
 }
 
@@ -34,24 +39,24 @@ body {
 /*================================================================================*/
 
 
-h1, 
-h2{
+h1,
+h2 {
   text-transform: uppercase;
 }
 
-.imagen{
+.imagen {
   padding: 10px;
   border-radius: 10px;
 }
 
-.imagen img{
+.imagen img {
   border-radius: 10px;
 }
 
-.img-width{
+.img-width {
   width: 100%;
   height: 174px;
-  
+
 }
 
 .hidden {
@@ -59,16 +64,17 @@ h2{
 }
 
 .minimizar {
-  animation: rotate 0.5s ease-in 1; 
+  animation: rotate 0.5s ease-in 1;
   transform: scale(0);
 }
 
 @keyframes rotate {
   to {
-    transform: rotate(180deg) scale(0); 
+    transform: rotate(180deg) scale(0);
   }
+
   from {
-    transform: rotate(360deg) scale(1); 
+    transform: rotate(360deg) scale(1);
   }
 }
 
@@ -82,7 +88,8 @@ h2{
   transform: scale(1);
   top: 0;
   left: 0;
-  transition:ease .1s; /*corregir*/
+  transition: ease .1s;
+  /*corregir*/
   margin: 0 auto;
   overflow: hidden;
   padding: 100px;
@@ -99,7 +106,7 @@ h2{
     padding: 150px;
     box-shadow: 0 0 20px #0000006e;
 
-    > #load-airplane {
+    >#load-airplane {
       width: 20rem;
       margin-bottom: 4vh;
       transform: rotate(90deg);
@@ -124,33 +131,33 @@ h2{
 }
 
 
-.canvas-body{
+.canvas-body {
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 49%, rgba(199, 246, 255, 1) 100%) !important;
 
 
   /* ESTILOS PARA EL HEADER DEL CANVAS DESPLEGABLE */
-  >.offcanvas-header{
+  >.offcanvas-header {
 
-    >h5{
+    >h5 {
       padding: 20px 30px;
     }
   }
 
   /* ESTILOS PARA EL CUERPO DEL CANVAS DESPLEGABLE */
-  >.offcanvas-body{
-  
+  >.offcanvas-body {
+
     >ul {
       list-style: none;
-  
-      >li{
+
+      >li {
         padding: 20px 20px 20px 0;
         border-bottom: 1px solid #000;
       }
 
     }
-    
+
   }
-  
+
 }
 
 .swiper .swiper-button-next:hover,
@@ -180,7 +187,7 @@ nav {
   padding: 30px 10px !important;
 }
 
-h1{
+h1 {
   font-size: 5rem;
 }
 
@@ -188,7 +195,7 @@ h1{
   padding: 80px 40px 200px 40px;
 }
 
-.title-principal{
+.title-principal {
   padding: 10px;
 }
 
@@ -294,7 +301,7 @@ h1{
   padding: 100px 40px;
 }
 
-#ofertas h2{
+#ofertas h2 {
   font-size: 2rem;
   margin-bottom: 40px;
 }
@@ -305,12 +312,12 @@ h1{
 
 }
 
-#ofertas .imagen{
+#ofertas .imagen {
   position: relative;
   z-index: 3;
 }
 
-#ofertas .imagen a{
+#ofertas .imagen a {
   position: absolute;
   z-index: 10;
   top: 43%;
@@ -326,40 +333,41 @@ h1{
 }
 
 
-#ofertas .card:hover a{
+#ofertas .card:hover a {
   background: #00000063;
   box-shadow: 0 0 5px #fff;
   transform: scale(1);
 }
 
-#ofertas .card a:hover{
+#ofertas .card a:hover {
   cursor: url(../img/cursors/pointer.png), auto;
 }
 
 
 
 /* CONTACTO */
-#contacto h2{
+#contacto h2 {
   font-size: 2rem;
   margin-bottom: 40px;
 }
 
-#contacto input{
+#contacto input {
   padding: 10px;
 }
 
 #contacto input:focus,
-#contacto textarea:focus{
+#contacto textarea:focus {
   box-shadow: 0 0 10px #db6847;
 }
 
-#contacto .submit-btn{
+#contacto .submit-btn {
   background: var(--red);
   font-size: 1.3rem;
   border-radius: 10px;
   transition: .5s;
 }
-#contacto .submit-btn:hover{
+
+#contacto .submit-btn:hover {
   transform: scale(.94);
   box-shadow: 0 0 10px #db6847;
   cursor: url(../img/cursors/pointer.png), auto;
@@ -369,30 +377,31 @@ h1{
 
 
 /* PREGUNTAS */
-#preguntas{
+#preguntas {
   padding: 50px 20px;
   border-radius: 10px;
   margin-left: 10px;
   transition: .5s;
 }
 
-#preguntas:hover{
+#preguntas:hover {
   box-shadow: 0 0 50px #00000067;
 
 }
 
 
-#preguntas .accordion .accordion-item{
+#preguntas .accordion .accordion-item {
   box-shadow: 0 0 10px #0000006f;
   transition: .5s;
 }
-#preguntas .accordion .accordion-item .accordion-button{
-  background: radial-gradient(circle,  rgba(199, 246, 255, 1) 0%,  rgba(238, 174, 202, 1) 90%);
+
+#preguntas .accordion .accordion-item .accordion-button {
+  background: radial-gradient(circle, rgba(199, 246, 255, 1) 0%, rgba(238, 174, 202, 1) 90%);
   font-weight: 500;
 }
 
 #preguntas .accordion .accordion-item .accordion-button:focus,
-#preguntas .accordion .accordion-item .accordion-button:hover{
+#preguntas .accordion .accordion-item .accordion-button:hover {
   box-shadow: 0 0 8px #c7f6ff;
   color: var(--dark);
   cursor: url(../img/cursors/pointer.png), auto;
@@ -402,14 +411,76 @@ h1{
 
 /* PREGUNTAS */
 #momentos,
-#actividades{
+#actividades {
   padding-top: 40px;
 }
 
 
 /* ACTIVIDADES */
 
+#actividades .actividades-card {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: #00000046;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+}
 
+#actividades .actividades-card .content {
+  padding: 20px;
+  text-align: center;
+  transform: translateY(300px);
+  transition: .5s;
+}
+
+#actividades .actividades-card:hover .content {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+#actividades .actividades-card .content h2 {
+  position: absolute;
+  top: -25px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+}
+
+#actividades .actividades-card .content h3 {
+  font-size: 1.8em;
+  color: #fff;
+  z-index: 1;
+}
+
+#actividades .actividades-card .content h3 {
+  font-size: iem;
+  color: #fff;
+  font-weight: 300;
+
+}
+
+#actividades .actividades-card .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  margin-top: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 500;
+
+}
 
 
 
@@ -428,19 +499,19 @@ h1{
 
 @media screen and (max-width:780px) {
 
- 
-  
-.loader {
-  padding: 50px;
 
-  >.content {
-    padding: 70px;
-    box-shadow: 0 0 20px #0000006e;
+
+  .loader {
+    padding: 50px;
+
+    >.content {
+      padding: 70px;
+      box-shadow: 0 0 20px #0000006e;
+
+    }
+
 
   }
-
-
-}
 
   .swiper .swiper-button-next,
   .swiper .swiper-button-prev {
@@ -462,21 +533,21 @@ h1{
 
   .loader {
     padding: 20px;
-  
+
     >.content {
       flex-direction: column;
       padding: 35px;
       box-shadow: 0 0 20px #0000006e;
 
-      > #load-airplane {
+      >#load-airplane {
         width: 15rem
       }
 
     }
-  
-  
+
+
   }
-  
+
 
   body {
     overflow-x: hidden;
@@ -500,7 +571,7 @@ h1{
 
 
   #momentos,
-  #preguntas{
+  #preguntas {
     text-align: center !important;
   }
 
