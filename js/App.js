@@ -5,12 +5,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
     // Optional parameters
     effect: 'cube',
     loop: true,
+    speed: 2000,
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
     },
    autoplay: {
-      delay: 1000,
+      delay: 500,
       pauseOnMouseEnter: true,
       disableInteraction: false,
     },
