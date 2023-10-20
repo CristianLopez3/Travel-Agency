@@ -27,7 +27,6 @@ body {
   background: rgb(238, 174, 202);
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(199, 246, 255, 1) 100%);
   position: relative;
-  cursor: url(../img/cursors/close.png), auto;
 }
 
 .overflow-body {
@@ -104,7 +103,7 @@ h2 {
     border-radius: 30px;
     background: #c7f6ff63;
     padding: 150px;
-    box-shadow: 0 0 20px #0000006e;
+    box-shadow: 0 0 10px #0000006e;
     transition: .8s;
 
     >#load-airplane {
@@ -219,7 +218,6 @@ h1 {
 .viaja-link:hover {
   box-shadow: 0px 0px 10px #db6847;
   padding: 12px 48px;
-  cursor: url(../img/cursors/pointer.png), auto;
   background: #88d9e9;
 }
 
@@ -340,10 +338,6 @@ h1 {
   transform: scale(1);
 }
 
-#ofertas .card a:hover {
-  cursor: url(../img/cursors/pointer.png), auto;
-}
-
 
 
 /* CONTACTO */
@@ -371,8 +365,6 @@ h1 {
 #contacto .submit-btn:hover {
   transform: scale(.94);
   box-shadow: 0 0 10px #db6847;
-  cursor: url(../img/cursors/pointer.png), auto;
-
 }
 
 
@@ -388,7 +380,7 @@ h1 {
 #preguntas:hover,
 #destinos:hover,
 #actividades:hover {
-  box-shadow: 0 0 50px #00000067;
+  box-shadow: 0 0 20px #00000067;
 
 }
 
@@ -407,7 +399,6 @@ h1 {
 #preguntas .accordion .accordion-item .accordion-button:hover {
   box-shadow: 0 0 8px #c7f6ff;
   color: var(--dark);
-  cursor: url(../img/cursors/pointer.png), auto;
 }
 
 
@@ -475,7 +466,6 @@ h1 {
 
 
 #actividades .container-activity .content-activity a{
-  cursor: url(../img/cursors/pointer.png), auto;
   text-decoration: none;
   padding: 8px 20px;
   border-radius: 10px;
@@ -489,12 +479,6 @@ h1 {
 /*=========================================================================================*/
 
 
-.swiper .swiper-button-next:hover,
-.swiper .swiper-button-prev:hover,
-a:hover, 
-button:hover {
-  cursor: url(../img/cursors/pointer.png), auto;
-}
 
 
 
@@ -521,7 +505,7 @@ button:hover {
 
     >.content {
       padding: 70px;
-      box-shadow: 0 0 20px #0000006e;
+      box-shadow: 0 0 10px #0000006e;
 
     }
 
